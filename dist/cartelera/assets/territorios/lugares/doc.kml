@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Lugares</name>
+    <Style id="icon-1899-01579B-labelson">
+      <IconStyle>
+        <color>ff9b5701</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-6.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-labelson">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-5.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-1A237E-labelson">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-7.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-7CB342-labelson">
+      <IconStyle>
+        <color>ff42b37c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-8.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-9C27B0-labelson">
+      <IconStyle>
+        <color>ffb0279c</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-1.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-A52714-labelson">
+      <IconStyle>
+        <color>ff1427a5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-2.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-C2185B-labelson">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-9.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-E65100-labelson">
+      <IconStyle>
+        <color>ff0051e6</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-3.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Style id="icon-1899-F9A825-labelson">
+      <IconStyle>
+        <color>ff25a8f9</color>
+        <scale>1</scale>
+        <Icon>
+          <href>images/icon-4.png</href>
+        </Icon>
+        <hotSpot x="16" xunits="pixels" y="32" yunits="insetPixels"/>
+      </IconStyle>
+    </Style>
+    <Placemark>
+      <name>Familia Costa</name>
+      <description><![CDATA[Grupo: Grupo 8<br>Dirección: Pedro Cosio 2138]]></description>
+      <styleUrl>#icon-1899-A52714-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 8</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Pedro Cosio 2138</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.1022117,-34.8787569,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Familia Dávila</name>
+      <description><![CDATA[Grupo: Grupo 6<br>Dirección: Iguá, esq. Mataojo, Senda 8 Apto. 101]]></description>
+      <styleUrl>#icon-1899-E65100-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 6</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Iguá, esq. Mataojo, Senda 8 Apto. 101</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.1178127,-34.8798516,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Familia De Los Santos</name>
+      <description><![CDATA[Grupo: Grupo 2<br>Dirección: Calle 5 y calle 3, Zona 3, Tira 35, Apto 5597, Av. Bolivia 255]]></description>
+      <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 2</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Calle 5 y calle 3, Zona 3, Tira 35, Apto 5597, Av. Bolivia 255</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.0938445,-34.8750205,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Familia Khars</name>
+      <description><![CDATA[Grupo: Grupo 4B<br>Dirección: Flammarión 5050, Apto. 303]]></description>
+      <styleUrl>#icon-1899-0288D1-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 4B</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Flammarión 5050, Apto. 303</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.1041053,-34.8746641,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Familia Meza</name>
+      <description><![CDATA[Grupo: Grupo 7<br>Dirección: Andrés Gómez 2022]]></description>
+      <styleUrl>#icon-1899-01579B-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 7</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Andrés Gómez 2022</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.1028714,-34.8829012,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Familia Núñez</name>
+      <description><![CDATA[Grupo: Grupo 3<br>Dirección: Av. Bolivia 2551, Block Q, Apto. 112]]></description>
+      <styleUrl>#icon-1899-1A237E-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 3</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Av. Bolivia 2551, Block Q, Apto. 112</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.0948557,-34.8765322,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Familia Ubal</name>
+      <description><![CDATA[Grupo: Grupo 4A<br>Dirección: Ana María Rubens 2359]]></description>
+      <styleUrl>#icon-1899-7CB342-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 4A</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Ana María Rubens 2359</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.104297,-34.872403,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Gladys Rodríguez</name>
+      <description><![CDATA[Grupo: Grupo 1<br>Dirección: Padua 5881]]></description>
+      <styleUrl>#icon-1899-C2185B-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 1</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Padua 5881</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.0826355,-34.8766126,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Familia Machado</name>
+      <description><![CDATA[Grupo: Grupo 7<br>Dirección: Zaragoza 1835, Apto. 4]]></description>
+      <styleUrl>#icon-1899-01579B-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 7</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Zaragoza 1835, Apto. 4</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.104515,-34.8837104,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Av. Bolivia y Villa de Masnou</name>
+      <description><![CDATA[Grupo: Grupo 2<br>Dirección: ]]></description>
+      <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 2</value>
+        </Data>
+        <Data name="Dirección">
+          <value/>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.0859507,-34.8788461,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Salón de Reino</name>
+      <description><![CDATA[Grupo: Grupo 5<br>Dirección: Veracierto 2485]]></description>
+      <styleUrl>#icon-1899-9C27B0-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 5</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Veracierto 2485</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.116823,-34.8722754,0
+        </coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
+      <name>Familia Pietrafesa</name>
+      <description><![CDATA[Grupo: Grupo 2<br>Dirección: Elías Regules 5859]]></description>
+      <styleUrl>#icon-1899-F9A825-labelson</styleUrl>
+      <ExtendedData>
+        <Data name="Grupo">
+          <value>Grupo 2</value>
+        </Data>
+        <Data name="Dirección">
+          <value>Elías Regules 5859</value>
+        </Data>
+      </ExtendedData>
+      <Point>
+        <coordinates>
+          -56.0891265,-34.8722798,0
+        </coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+</kml>
