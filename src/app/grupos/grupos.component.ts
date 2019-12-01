@@ -8,7 +8,7 @@ import {ObtenerService} from '../obtener.service';
 export class GruposComponent implements OnInit {
 
   constructor(public json:ObtenerService){
-    this.json.getJson('https://spreadsheets.google.com/feeds/list/1VlMq7txs6bejx4wk5w_YrYiEpYmaXNw3y4OsNUUHxu0/4/public/values?alt=json').subscribe((res:any)=>{
+    this.json.getJson('https://spreadsheets.google.com/feeds/list/1VlMq7txs6bejx4wk5w_YrYiEpYmaXNw3y4OsNUUHxu0/3/public/values?alt=json').subscribe((res:any)=>{
       for (var i = 0; i < res.feed.entry.length; i++) {  
     let dia = res.feed.entry[i].gsx$día.$t;
     let hora = res.feed.entry[i].gsx$hora.$t;
