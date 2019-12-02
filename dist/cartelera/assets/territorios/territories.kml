@@ -2,38 +2,6 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
     <name>Territorios</name>
-    <Style id="poly-006064-1200-76-normal">
-      <LineStyle>
-        <color>ff646000</color>
-        <width>1.2</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c646000</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <Style id="poly-006064-1200-76-highlight">
-      <LineStyle>
-        <color>ff646000</color>
-        <width>1.8</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c646000</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <StyleMap id="poly-006064-1200-76">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#poly-006064-1200-76-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#poly-006064-1200-76-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
     <Style id="poly-0288D1-1200-76-normal">
       <LineStyle>
         <color>ffd18802</color>
@@ -66,670 +34,47 @@
         <styleUrl>#poly-0288D1-1200-76-highlight</styleUrl>
       </Pair>
     </StyleMap>
-    <Style id="poly-1A237E-1200-76-normal">
+    <Style id="poly-0288D1-1200-76-nodesc-normal">
       <LineStyle>
-        <color>ff7e231a</color>
+        <color>ffd18802</color>
         <width>1.2</width>
       </LineStyle>
       <PolyStyle>
-        <color>4c7e231a</color>
+        <color>4cd18802</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
     </Style>
-    <Style id="poly-1A237E-1200-76-highlight">
+    <Style id="poly-0288D1-1200-76-nodesc-highlight">
       <LineStyle>
-        <color>ff7e231a</color>
+        <color>ffd18802</color>
         <width>1.8</width>
       </LineStyle>
       <PolyStyle>
-        <color>4c7e231a</color>
+        <color>4cd18802</color>
         <fill>1</fill>
         <outline>1</outline>
       </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
     </Style>
-    <StyleMap id="poly-1A237E-1200-76">
+    <StyleMap id="poly-0288D1-1200-76-nodesc">
       <Pair>
         <key>normal</key>
-        <styleUrl>#poly-1A237E-1200-76-normal</styleUrl>
+        <styleUrl>#poly-0288D1-1200-76-nodesc-normal</styleUrl>
       </Pair>
       <Pair>
         <key>highlight</key>
-        <styleUrl>#poly-1A237E-1200-76-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="poly-7CB342-1200-76-normal">
-      <LineStyle>
-        <color>ff42b37c</color>
-        <width>1.2</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c42b37c</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <Style id="poly-7CB342-1200-76-highlight">
-      <LineStyle>
-        <color>ff42b37c</color>
-        <width>1.8</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c42b37c</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <StyleMap id="poly-7CB342-1200-76">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#poly-7CB342-1200-76-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#poly-7CB342-1200-76-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="poly-9C27B0-1200-76-normal">
-      <LineStyle>
-        <color>ffb0279c</color>
-        <width>1.2</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4cb0279c</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <Style id="poly-9C27B0-1200-76-highlight">
-      <LineStyle>
-        <color>ffb0279c</color>
-        <width>1.8</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4cb0279c</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <StyleMap id="poly-9C27B0-1200-76">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#poly-9C27B0-1200-76-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#poly-9C27B0-1200-76-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="poly-A52714-1200-76-normal">
-      <LineStyle>
-        <color>ff1427a5</color>
-        <width>1.2</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c1427a5</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <Style id="poly-A52714-1200-76-highlight">
-      <LineStyle>
-        <color>ff1427a5</color>
-        <width>1.8</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c1427a5</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <StyleMap id="poly-A52714-1200-76">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#poly-A52714-1200-76-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#poly-A52714-1200-76-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="poly-C2185B-1200-76-normal">
-      <LineStyle>
-        <color>ff5b18c2</color>
-        <width>1.2</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c5b18c2</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <Style id="poly-C2185B-1200-76-highlight">
-      <LineStyle>
-        <color>ff5b18c2</color>
-        <width>1.8</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c5b18c2</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <StyleMap id="poly-C2185B-1200-76">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#poly-C2185B-1200-76-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#poly-C2185B-1200-76-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="poly-E65100-1200-76-normal">
-      <LineStyle>
-        <color>ff0051e6</color>
-        <width>1.2</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c0051e6</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <Style id="poly-E65100-1200-76-highlight">
-      <LineStyle>
-        <color>ff0051e6</color>
-        <width>1.8</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c0051e6</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <StyleMap id="poly-E65100-1200-76">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#poly-E65100-1200-76-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#poly-E65100-1200-76-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="poly-F9A825-1200-76-normal">
-      <LineStyle>
-        <color>ff25a8f9</color>
-        <width>1.2</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c25a8f9</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <Style id="poly-F9A825-1200-76-highlight">
-      <LineStyle>
-        <color>ff25a8f9</color>
-        <width>1.8</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c25a8f9</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <StyleMap id="poly-F9A825-1200-76">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#poly-F9A825-1200-76-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#poly-F9A825-1200-76-highlight</styleUrl>
-      </Pair>
-    </StyleMap>
-    <Style id="poly-FFEA00-1200-76-normal">
-      <LineStyle>
-        <color>ff00eaff</color>
-        <width>1.2</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c00eaff</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <Style id="poly-FFEA00-1200-76-highlight">
-      <LineStyle>
-        <color>ff00eaff</color>
-        <width>1.8</width>
-      </LineStyle>
-      <PolyStyle>
-        <color>4c00eaff</color>
-        <fill>1</fill>
-        <outline>1</outline>
-      </PolyStyle>
-    </Style>
-    <StyleMap id="poly-FFEA00-1200-76">
-      <Pair>
-        <key>normal</key>
-        <styleUrl>#poly-FFEA00-1200-76-normal</styleUrl>
-      </Pair>
-      <Pair>
-        <key>highlight</key>
-        <styleUrl>#poly-FFEA00-1200-76-highlight</styleUrl>
+        <styleUrl>#poly-0288D1-1200-76-nodesc-highlight</styleUrl>
       </Pair>
     </StyleMap>
     <Placemark>
-      <name>1</name>
-      <description><![CDATA[Grupo: Grupo 1<br>Situación: ]]></description>
-      <styleUrl>#poly-C2185B-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 1</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0821366,-34.8808615,0
-              -56.0805548,-34.8795385,0
-              -56.0750582,-34.8701824,0
-              -56.0805755,-34.8700572,0
-              -56.0854411,-34.8708802,0
-              -56.0842395,-34.8727573,0
-              -56.0835421,-34.8738543,0
-              -56.0828447,-34.8750657,0
-              -56.0838854,-34.8767072,0
-              -56.085881,-34.8789252,0
-              -56.0855189,-34.8792058,0
-              -56.0849959,-34.8797416,0
-              -56.0840893,-34.880866,0
-              -56.0837836,-34.8813302,0
-              -56.0835958,-34.8818033,0
-              -56.0821366,-34.8808615,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>2</name>
-      <description><![CDATA[Grupo: Grupo 2<br>Situación: ]]></description>
-      <styleUrl>#poly-F9A825-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 2</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0855645,-34.8708582,0
-              -56.0877156,-34.8712543,0
-              -56.0879275,-34.8715624,0
-              -56.0894484,-34.872962,0
-              -56.0868841,-34.8747752,0
-              -56.0858112,-34.8736353,0
-              -56.0843199,-34.8727551,0
-              -56.0855645,-34.8708582,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>3</name>
-      <description><![CDATA[Grupo: Grupo 2<br>Situación: ]]></description>
-      <styleUrl>#poly-F9A825-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 2</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0842877,-34.8728299,0
-              -56.0857844,-34.8737145,0
-              -56.0869029,-34.874927,0
-              -56.0888904,-34.8770285,0
-              -56.0859346,-34.8788724,0
-              -56.0838532,-34.8766016,0
-              -56.0829412,-34.8750569,0
-              -56.0842877,-34.8728299,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>4</name>
-      <description><![CDATA[Grupo: Grupo 2<br>Situación: ]]></description>
-      <styleUrl>#poly-F9A825-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 2</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.087823,-34.8712763,0
-              -56.093123,-34.8722226,0
-              -56.0942709,-34.8723524,0
-              -56.0972374,-34.872359,0
-              -56.0959956,-34.8728475,0
-              -56.0944842,-34.8735715,0
-              -56.0917389,-34.8752901,0
-              -56.0895503,-34.8729224,0
-              -56.0880482,-34.8715756,0
-              -56.087823,-34.8712763,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>5</name>
-      <description><![CDATA[Grupo: Grupo 2<br>Situación: ]]></description>
-      <styleUrl>#poly-F9A825-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 2</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0895234,-34.873028,0
-              -56.0916585,-34.8753297,0
-              -56.0889816,-34.8770065,0
-              -56.086927,-34.874828,0
-              -56.0895234,-34.873028,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>6</name>
-      <description><![CDATA[Grupo: Grupo 1<br>Situación: ]]></description>
-      <styleUrl>#poly-C2185B-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 1</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0860097,-34.8789516,0
-              -56.0877586,-34.8778514,0
-              -56.0897916,-34.8812532,0
-              -56.0893304,-34.8813852,0
-              -56.0892043,-34.8814996,0
-              -56.0891533,-34.8818165,0
-              -56.089325,-34.8820057,0
-              -56.0890809,-34.882998,0
-              -56.0890835,-34.8831718,0
-              -56.088118,-34.8831586,0
-              -56.0860097,-34.8789516,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>7</name>
-      <description><![CDATA[Grupo: Grupo 1<br>Situación: ]]></description>
-      <styleUrl>#poly-C2185B-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 1</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0859454,-34.8790396,0
-              -56.0879838,-34.8831674,0
-              -56.0847116,-34.8831851,0
-              -56.083746,-34.882921,0
-              -56.0836065,-34.8824546,0
-              -56.0837138,-34.8818561,0
-              -56.0842609,-34.8808175,0
-              -56.0850227,-34.8799198,0
-              -56.0859454,-34.8790396,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>8</name>
-      <description><![CDATA[Grupo: Grupo 3<br>Situación: ]]></description>
-      <styleUrl>#poly-1A237E-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 3</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0966527,-34.8750128,0
-              -56.0964113,-34.8751141,0
-              -56.0951078,-34.8751493,0
-              -56.0950541,-34.8744055,0
-              -56.0945553,-34.8736441,0
-              -56.0954297,-34.8732216,0
-              -56.0966527,-34.8750128,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>9</name>
-      <description><![CDATA[Grupo: Grupo 3<br>Situación: ]]></description>
-      <styleUrl>#poly-1A237E-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 3</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0944533,-34.8737013,0
-              -56.0947216,-34.8740314,0
-              -56.0950112,-34.8744715,0
-              -56.0950327,-34.8751449,0
-              -56.0940403,-34.8751713,0
-              -56.0938311,-34.8751317,0
-              -56.0933483,-34.8743835,0
-              -56.0944533,-34.8737013,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>10</name>
-      <description><![CDATA[Grupo: Grupo 3<br>Situación: ]]></description>
-      <styleUrl>#poly-1A237E-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 3</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0932946,-34.8744319,0
-              -56.0937667,-34.8752021,0
-              -56.0940081,-34.8752461,0
-              -56.0950381,-34.8752241,0
-              -56.0950166,-34.8760471,0
-              -56.0937828,-34.8760911,0
-              -56.0936326,-34.8760779,0
-              -56.0927045,-34.8747884,0
-              -56.0932946,-34.8744319,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>11</name>
-      <description><![CDATA[Grupo: Grupo 3<br>Situación: ]]></description>
-      <styleUrl>#poly-1A237E-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 3</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0936326,-34.8761747,0
-              -56.0974735,-34.8761131,0
-              -56.0976505,-34.8763375,0
-              -56.0968834,-34.8767732,0
-              -56.0953867,-34.8774509,0
-              -56.09492,-34.8777678,0
-              -56.094802,-34.8778294,0
-              -56.0936326,-34.8761747,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>12</name>
-      <description><![CDATA[Grupo: Grupo 3<br>Situación: ]]></description>
-      <styleUrl>#poly-1A237E-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 3</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0951132,-34.8752021,0
-              -56.0964328,-34.8751933,0
-              -56.0966957,-34.8750833,0
-              -56.0973984,-34.8760207,0
-              -56.0951132,-34.8760427,0
-              -56.0951132,-34.8752021,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>13</name>
-      <description><![CDATA[Grupo: Grupo 3<br>Situación: ]]></description>
-      <styleUrl>#poly-1A237E-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 3</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0969263,-34.8725439,0
-              -56.09882,-34.8751581,0
-              -56.0973501,-34.8758534,0
-              -56.095494,-34.8731864,0
-              -56.0969263,-34.8725439,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>14</name>
-      <description><![CDATA[Grupo: Grupo 4A<br>Situación: ]]></description>
-      <styleUrl>#poly-7CB342-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 4A</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>51</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -755,17 +100,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>15</name>
-      <description><![CDATA[Grupo: Grupo 4A<br>Situación: ]]></description>
-      <styleUrl>#poly-7CB342-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 4A</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>72</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -782,17 +118,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>16</name>
-      <description><![CDATA[Grupo: Grupo 4A<br>Situación: ]]></description>
-      <styleUrl>#poly-7CB342-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 4A</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>66</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -812,85 +139,15 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>17</name>
-      <description><![CDATA[Grupo: Grupo 4A<br>Situación: ]]></description>
-      <styleUrl>#poly-7CB342-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 4A</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>50</name>
+      <description>Acceso restringido</description>
+      <styleUrl>#poly-0288D1-1200-76</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <tessellate>1</tessellate>
             <coordinates>
-              -56.1030096,-34.8756466,0
               -56.1026234,-34.8761175,0
-              -56.1008585,-34.8751009,0
-              -56.1001852,-34.8746767,0
-              -56.1006814,-34.8746025,0
-              -56.1008585,-34.8743835,0
-              -56.1030096,-34.8756466,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>18</name>
-      <description><![CDATA[Grupo: Grupo 4A<br>Situación: ]]></description>
-      <styleUrl>#poly-7CB342-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 4A</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.1016577,-34.8773057,0
-              -56.1015075,-34.8771209,0
-              -56.1014807,-34.8767116,0
-              -56.1009336,-34.8759018,0
-              -56.1004132,-34.8755718,0
-              -56.1007941,-34.8751361,0
-              -56.1025697,-34.8762011,0
-              -56.1016577,-34.8773057,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>19</name>
-      <description><![CDATA[Grupo: Grupo 4A<br>Situación: Acceso restringido]]></description>
-      <styleUrl>#poly-7CB342-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 4A</value>
-        </Data>
-        <Data name="Situación">
-          <value>Acceso restringido</value>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.100322,-34.875651,0
-              -56.1008853,-34.8759635,0
-              -56.101411,-34.8767512,0
-              -56.1014217,-34.8771517,0
               -56.1015934,-34.8773541,0
               -56.1007672,-34.8783575,0
               -56.0991633,-34.8761615,0
@@ -898,25 +155,18 @@
               -56.0988843,-34.8751823,0
               -56.0999572,-34.8746333,0
               -56.1001852,-34.8746767,0
-              -56.1008169,-34.8750626,0
-              -56.100322,-34.875651,0
+              -56.100896,-34.8743263,0
+              -56.1030686,-34.8755894,0
+              -56.1026234,-34.8761175,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>20</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: Acceso restringido]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value>Acceso restringido</value>
-        </Data>
-      </ExtendedData>
+      <name>43</name>
+      <description>Acceso restringido</description>
+      <styleUrl>#poly-0288D1-1200-76</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -935,17 +185,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>21</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: ]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>44</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -970,17 +211,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>22</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: ]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>42</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -998,17 +230,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>23</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: ]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>41</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1026,17 +249,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>24</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: ]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>40</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1056,17 +270,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>25</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: ]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>39</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1085,17 +290,9 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>26</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: Acceso restringido]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value>Acceso restringido</value>
-        </Data>
-      </ExtendedData>
+      <name>38</name>
+      <description>Acceso restringido</description>
+      <styleUrl>#poly-0288D1-1200-76</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1103,8 +300,8 @@
             <coordinates>
               -56.0966206,-34.87698,0
               -56.0978007,-34.8785424,0
-              -56.0969102,-34.878978,0
-              -56.0957837,-34.8773585,0
+              -56.0960304,-34.8794005,0
+              -56.0949469,-34.877825,0
               -56.0966206,-34.87698,0
             </coordinates>
           </LinearRing>
@@ -1112,44 +309,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>27</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: Acceso restringido]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value>Acceso restringido</value>
-        </Data>
-      </ExtendedData>
-      <Polygon>
-        <outerBoundaryIs>
-          <LinearRing>
-            <tessellate>1</tessellate>
-            <coordinates>
-              -56.0957837,-34.8773585,0
-              -56.0969102,-34.878978,0
-              -56.0959071,-34.8794797,0
-              -56.094845,-34.8778955,0
-              -56.0957837,-34.8773585,0
-            </coordinates>
-          </LinearRing>
-        </outerBoundaryIs>
-      </Polygon>
-    </Placemark>
-    <Placemark>
-      <name>28</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: ]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>37</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1167,17 +328,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>29</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: ]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>36</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1195,17 +347,9 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>30</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: Acceso restringido]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value>Acceso restringido</value>
-        </Data>
-      </ExtendedData>
+      <name>35</name>
+      <description>Acceso restringido</description>
+      <styleUrl>#poly-0288D1-1200-76</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1222,28 +366,17 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>31</name>
-      <description><![CDATA[Grupo: Grupo 8<br>Situación: ]]></description>
-      <styleUrl>#poly-A52714-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 8</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>33</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <tessellate>1</tessellate>
             <coordinates>
               -56.0958481,-34.8849232,0
-              -56.0968781,-34.8836339,0
-              -56.0975969,-34.8824722,0
-              -56.1003542,-34.8790748,0
-              -56.1029613,-34.8805271,0
-              -56.1003864,-34.8836779,0
+              -56.0968084,-34.8835723,0
+              -56.0975325,-34.8825382,0
+              -56.1003435,-34.8837043,0
               -56.099056,-34.8856141,0
               -56.0974038,-34.8852885,0
               -56.0958481,-34.8849232,0
@@ -1253,45 +386,27 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>32</name>
-      <description><![CDATA[Grupo: Grupo 4B<br>Situación: ]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 4B</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>64</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <tessellate>1</tessellate>
             <coordinates>
-              -56.1004132,-34.8790044,0
-              -56.1039859,-34.8745992,0
               -56.1052304,-34.8752417,0
               -56.1066574,-34.8760427,0
-              -56.1030203,-34.8804611,0
-              -56.1004132,-34.8790044,0
+              -56.1044472,-34.8786964,0
+              -56.1029855,-34.8804016,0
+              -56.1016644,-34.8797096,0
+              -56.1052304,-34.8752417,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>33</name>
-      <description><![CDATA[Grupo: Grupo 5<br>Situación: ]]></description>
-      <styleUrl>#poly-9C27B0-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 5</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>63</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1312,85 +427,56 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>34</name>
-      <description><![CDATA[Grupo: Grupo 7<br>Situación: ]]></description>
-      <styleUrl>#poly-006064-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 7</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>47</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <tessellate>1</tessellate>
             <coordinates>
-              -56.1053136,-34.8778294,0
-              -56.1103749,-34.8805975,0
-              -56.1114102,-34.8811872,0
-              -56.1113137,-34.882503,0
-              -56.1076551,-34.8804765,0
-              -56.1054021,-34.8792685,0
-              -56.1051285,-34.879022,0
-              -56.1045626,-34.8787272,0
-              -56.1053136,-34.8778294,0
+              -56.1069766,-34.8787624,0
+              -56.1096829,-34.8802367,0
+              -56.1089534,-34.881174,0
+              -56.1083364,-34.8808605,0
+              -56.1073735,-34.8820943,0
+              -56.1063019,-34.882676,0
+              -56.1046081,-34.8816911,0
+              -56.1062256,-34.8796954,0
+              -56.1069766,-34.8787624,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>35</name>
-      <description><![CDATA[Grupo: Grupo 7<br>Situación: ]]></description>
-      <styleUrl>#poly-006064-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 7</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>46</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <tessellate>1</tessellate>
             <coordinates>
-              -56.104525,-34.87878,0
-              -56.1050078,-34.8790484,0
-              -56.1052465,-34.8792839,0
-              -56.1073788,-34.8804237,0
+              -56.1083337,-34.8809606,0
+              -56.1089707,-34.8813269,0
+              -56.1098043,-34.8803043,0
+              -56.1113797,-34.8811484,0
+              -56.1113843,-34.8818961,0
               -56.111303,-34.882591,0
               -56.1111339,-34.8833149,0
               -56.1106123,-34.8834172,0
               -56.1104078,-34.8830173,0
               -56.1101577,-34.8827275,0
               -56.1087335,-34.8820629,0
-              -56.1077061,-34.8820982,0
-              -56.1070061,-34.882503,0
-              -56.106467,-34.8827934,0
-              -56.102913,-34.8807735,0
-              -56.104525,-34.87878,0
+              -56.1074272,-34.8822126,0
+              -56.1083337,-34.8809606,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>36</name>
-      <description><![CDATA[Grupo: Grupo 7<br>Situación: ]]></description>
-      <styleUrl>#poly-006064-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 7</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>32</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1413,17 +499,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>37</name>
-      <description><![CDATA[Grupo: Grupo 7<br>Situación: ]]></description>
-      <styleUrl>#poly-006064-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 7</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>31</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1444,17 +521,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>38</name>
-      <description><![CDATA[Grupo: Grupo 7<br>Situación: ]]></description>
-      <styleUrl>#poly-006064-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 7</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>30</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1477,17 +545,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>39</name>
-      <description><![CDATA[Grupo: Grupo 7<br>Situación: ]]></description>
-      <styleUrl>#poly-006064-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 7</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>29</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1514,17 +573,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>40</name>
-      <description><![CDATA[Grupo: Grupo 7<br>Situación: ]]></description>
-      <styleUrl>#poly-006064-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 7</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>28</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1548,17 +598,9 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>41</name>
-      <description><![CDATA[Grupo: Grupo 6<br>Situación: Acceso restringido]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 6</value>
-        </Data>
-        <Data name="Situación">
-          <value>Acceso restringido</value>
-        </Data>
-      </ExtendedData>
+      <name>45</name>
+      <description>Acceso restringido</description>
+      <styleUrl>#poly-0288D1-1200-76</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1587,17 +629,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>42</name>
-      <description><![CDATA[Grupo: Grupo 6<br>Situación: ]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 6</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>52</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1619,17 +652,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>43</name>
-      <description><![CDATA[Grupo: Grupo 6<br>Situación: ]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 6</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>53</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1648,17 +672,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>44</name>
-      <description><![CDATA[Grupo: Grupo 6<br>Situación: ]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 6</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>54</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1679,17 +694,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>45</name>
-      <description><![CDATA[Grupo: Grupo 6<br>Situación: ]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 6</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>55</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1709,17 +715,9 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>46</name>
-      <description><![CDATA[Grupo: Grupo 6<br>Situación: Riesgo de seguridad]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 6</value>
-        </Data>
-        <Data name="Situación">
-          <value>Riesgo de seguridad</value>
-        </Data>
-      </ExtendedData>
+      <name>57</name>
+      <description>Riesgo de seguridad</description>
+      <styleUrl>#poly-0288D1-1200-76</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1743,17 +741,9 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>47</name>
-      <description><![CDATA[Grupo: Grupo 6<br>Situación: Riesgo de seguridad]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 6</value>
-        </Data>
-        <Data name="Situación">
-          <value>Riesgo de seguridad</value>
-        </Data>
-      </ExtendedData>
+      <name>59</name>
+      <description>Riesgo de seguridad</description>
+      <styleUrl>#poly-0288D1-1200-76</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1771,17 +761,9 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>48</name>
-      <description><![CDATA[Grupo: Grupo 6<br>Situación: Riesgo de seguridad]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 6</value>
-        </Data>
-        <Data name="Situación">
-          <value>Riesgo de seguridad</value>
-        </Data>
-      </ExtendedData>
+      <name>58</name>
+      <description>Riesgo de seguridad</description>
+      <styleUrl>#poly-0288D1-1200-76</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1803,17 +785,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>49</name>
-      <description><![CDATA[Grupo: Grupo 6<br>Situación: ]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 6</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>56</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1840,17 +813,9 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>50</name>
-      <description><![CDATA[Grupo: Grupo 6<br>Situación: Riesgo de seguridad]]></description>
-      <styleUrl>#poly-E65100-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 6</value>
-        </Data>
-        <Data name="Situación">
-          <value>Riesgo de seguridad</value>
-        </Data>
-      </ExtendedData>
+      <name>60</name>
+      <description>Riesgo de seguridad</description>
+      <styleUrl>#poly-0288D1-1200-76</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1870,24 +835,14 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>51</name>
-      <description><![CDATA[Grupo: Grupo 5<br>Situación: ]]></description>
-      <styleUrl>#poly-9C27B0-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 5</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>62</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <tessellate>1</tessellate>
             <coordinates>
-              -56.1114049,-34.8810948,0
-              -56.108079,-34.8792641,0
+              -56.1088837,-34.8780055,0
               -56.1095864,-34.8769096,0
               -56.1099297,-34.876672,0
               -56.1102998,-34.8760163,0
@@ -1895,26 +850,16 @@
               -56.1117321,-34.8765928,0
               -56.1111152,-34.877935,0
               -56.1110401,-34.8782123,0
-              -56.1112976,-34.8800386,0
-              -56.1113781,-34.8808527,0
-              -56.1114049,-34.8810948,0
+              -56.1111367,-34.878868,0
+              -56.1088837,-34.8780055,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>52</name>
-      <description><![CDATA[Grupo: Grupo 5<br>Situación: ]]></description>
-      <styleUrl>#poly-9C27B0-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 5</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>67</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1936,17 +881,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>53</name>
-      <description><![CDATA[Grupo: Grupo 5<br>Situación: ]]></description>
-      <styleUrl>#poly-9C27B0-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 5</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>68</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1964,17 +900,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>54</name>
-      <description><![CDATA[Grupo: Grupo 5<br>Situación: ]]></description>
-      <styleUrl>#poly-9C27B0-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 5</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>69</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -1996,17 +923,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>55</name>
-      <description><![CDATA[Grupo: Grupo 5<br>Situación: ]]></description>
-      <styleUrl>#poly-9C27B0-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 5</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>70</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2029,25 +947,20 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>56</name>
-      <description><![CDATA[Grupo: Grupo 4B<br>Situación: ]]></description>
-      <styleUrl>#poly-0288D1-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 4B</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>71</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
             <tessellate>1</tessellate>
             <coordinates>
               -56.1112761,-34.8703521,0
-              -56.1067218,-34.8759766,0
-              -56.1040449,-34.8745287,0
+              -56.108138,-34.8741722,0
+              -56.1078939,-34.8741788,0
+              -56.1066024,-34.8734604,0
+              -56.1065038,-34.8735412,0
+              -56.1062936,-34.8734936,0
+              -56.1053109,-34.8729883,0
               -56.1065099,-34.8715844,0
               -56.1073508,-34.8705435,0
               -56.1077518,-34.8699692,0
@@ -2060,17 +973,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>57</name>
-      <description><![CDATA[Grupo: Grupo 9<br>Situación: ]]></description>
-      <styleUrl>#poly-FFEA00-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 9</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>27</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2093,17 +997,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>58</name>
-      <description><![CDATA[Grupo: Grupo 9<br>Situación: ]]></description>
-      <styleUrl>#poly-FFEA00-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 9</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>26</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2122,17 +1017,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>59</name>
-      <description><![CDATA[Grupo: Grupo 9<br>Situación: ]]></description>
-      <styleUrl>#poly-FFEA00-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 9</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>25</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2151,17 +1037,8 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>60</name>
-      <description><![CDATA[Grupo: Grupo 9<br>Situación: ]]></description>
-      <styleUrl>#poly-FFEA00-1200-76</styleUrl>
-      <ExtendedData>
-        <Data name="Grupo">
-          <value>Grupo 9</value>
-        </Data>
-        <Data name="Situación">
-          <value/>
-        </Data>
-      </ExtendedData>
+      <name>24</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
           <LinearRing>
@@ -2173,6 +1050,562 @@
               -56.1175418,-34.8845514,0
               -56.1188695,-34.884459,0
               -56.1200657,-34.8842192,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>21</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1100639,-34.8871463,0
+              -56.1097313,-34.8882288,0
+              -56.1065663,-34.8881056,0
+              -56.1063732,-34.8874544,0
+              -56.1059977,-34.8870407,0
+              -56.1060674,-34.8869043,0
+              -56.1060942,-34.8863279,0
+              -56.1100639,-34.8871463,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>22</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1053281,-34.8880789,0
+              -56.1041533,-34.8880437,0
+              -56.1040997,-34.8861075,0
+              -56.1051779,-34.8861691,0
+              -56.1053214,-34.8867104,0
+              -56.1055937,-34.8872956,0
+              -56.1058089,-34.8874474,0
+              -56.1060349,-34.8877928,0
+              -56.1060356,-34.8881031,0
+              -56.1053281,-34.8880789,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>23</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1040246,-34.8861031,0
+              -56.1040782,-34.8880349,0
+              -56.1035096,-34.8880349,0
+              -56.1016052,-34.8868908,0
+              -56.1015891,-34.8861251,0
+              -56.1040246,-34.8861031,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>20</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.0989551,-34.8858997,0
+              -56.0994379,-34.8859877,0
+              -56.0996203,-34.8859569,0
+              -56.1001782,-34.8860889,0
+              -56.1002211,-34.8861901,0
+              -56.0970883,-34.8899832,0
+              -56.0960637,-34.8894067,0
+              -56.0989551,-34.8858997,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>16</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.10161,-34.8869841,0
+              -56.1033972,-34.8880473,0
+              -56.1033168,-34.8881397,0
+              -56.1027589,-34.8884389,0
+              -56.1027656,-34.8885478,0
+              -56.1028367,-34.8909976,0
+              -56.1019086,-34.8910086,0
+              -56.101884,-34.8900338,0
+              -56.1018342,-34.8890095,0
+              -56.1018058,-34.8888741,0
+              -56.1018461,-34.8887575,0
+              -56.10161,-34.8869841,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>17</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1004951,-34.8863488,0
+              -56.1015197,-34.886934,0
+              -56.1017772,-34.888769,0
+              -56.101737,-34.8889076,0
+              -56.1017732,-34.8891639,0
+              -56.1018389,-34.891013,0
+              -56.1008947,-34.891046,0
+              -56.1008116,-34.889286,0
+              -56.1007097,-34.8889274,0
+              -56.1002591,-34.8866832,0
+              -56.1004951,-34.8863488,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>18</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.100192,-34.8867184,0
+              -56.1006292,-34.8889296,0
+              -56.1007499,-34.889297,0
+              -56.1008196,-34.8910438,0
+              -56.0995751,-34.8910834,0
+              -56.0995161,-34.8896578,0
+              -56.0991245,-34.8876205,0
+              -56.0999131,-34.8866568,0
+              -56.100192,-34.8867184,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>19</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.0990748,-34.8876979,0
+              -56.099461,-34.8896956,0
+              -56.0994932,-34.8910729,0
+              -56.0974922,-34.8911301,0
+              -56.0977122,-34.8904789,0
+              -56.0976156,-34.8902765,0
+              -56.097165,-34.8900168,0
+              -56.0990748,-34.8876979,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>15</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1040765,-34.8881583,0
+              -56.1041731,-34.89097,0
+              -56.1029124,-34.8909788,0
+              -56.102832,-34.8885235,0
+              -56.1034221,-34.8881891,0
+              -56.1035079,-34.8881055,0
+              -56.1040765,-34.8881583,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>14</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1053211,-34.8881881,0
+              -56.105423,-34.8909251,0
+              -56.1042535,-34.8909647,0
+              -56.1041624,-34.8881573,0
+              -56.1053211,-34.8881881,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>13</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1060882,-34.8882057,0
+              -56.1061834,-34.890935,0
+              -56.1054766,-34.8909383,0
+              -56.1054069,-34.8881925,0
+              -56.1060882,-34.8882057,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>8</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1061746,-34.8910204,0
+              -56.1062337,-34.8924372,0
+              -56.1062605,-34.8934404,0
+              -56.1062283,-34.8935944,0
+              -56.1043507,-34.8938584,0
+              -56.1042649,-34.8910512,0
+              -56.1061746,-34.8910204,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>1</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1062229,-34.8936604,0
+              -56.1059869,-34.894756,0
+              -56.1057562,-34.8957372,0
+              -56.1044205,-34.8959968,0
+              -56.1043561,-34.8939376,0
+              -56.1062229,-34.8936604,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>9</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1041604,-34.8911389,0
+              -56.1042677,-34.8938494,0
+              -56.1020361,-34.8938934,0
+              -56.1019288,-34.8911477,0
+              -56.1041604,-34.8911389,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>10</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1018108,-34.8911653,0
+              -56.1019074,-34.8938934,0
+              -56.0996865,-34.8939286,0
+              -56.0995899,-34.8912269,0
+              -56.1018108,-34.8911653,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>11</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.0994612,-34.8912357,0
+              -56.0995578,-34.8939374,0
+              -56.0974013,-34.8939902,0
+              -56.0964035,-34.8937526,0
+              -56.0974656,-34.8912797,0
+              -56.0994612,-34.8912357,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>2</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1042892,-34.8939685,0
+              -56.1043321,-34.8960101,0
+              -56.1021434,-34.8968372,0
+              -56.1020254,-34.8940037,0
+              -56.1042892,-34.8939685,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>3</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1018966,-34.8940301,0
+              -56.1020468,-34.8968812,0
+              -56.1010813,-34.897242,0
+              -56.100974,-34.8940389,0
+              -56.1018966,-34.8940301,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>4</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1008989,-34.8940477,0
+              -56.1009632,-34.8972332,0
+              -56.1004053,-34.8972772,0
+              -56.0997616,-34.8971628,0
+              -56.0996758,-34.8940565,0
+              -56.1008989,-34.8940477,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>5</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.099547,-34.8940301,0
+              -56.0996221,-34.8970748,0
+              -56.0977231,-34.8966084,0
+              -56.0970258,-34.896714,0
+              -56.098281,-34.8940653,0
+              -56.099547,-34.8940301,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>6</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.0981416,-34.8940565,0
+              -56.0968863,-34.8966964,0
+              -56.0961245,-34.8966348,0
+              -56.0953842,-34.8961509,0
+              -56.0963928,-34.8938453,0
+              -56.097294,-34.8940829,0
+              -56.0981416,-34.8940565,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>12</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.0960494,-34.8894823,0
+              -56.0974656,-34.8902919,0
+              -56.0975837,-34.8904151,0
+              -56.0972725,-34.8912951,0
+              -56.0962318,-34.8936887,0
+              -56.0938715,-34.8930111,0
+              -56.0933243,-34.8927383,0
+              -56.0960494,-34.8894823,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>7</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.0962318,-34.8938119,0
+              -56.0952555,-34.8960999,0
+              -56.0943435,-34.8957391,0
+              -56.0915862,-34.8949735,0
+              -56.0932385,-34.8928351,0
+              -56.0937427,-34.8931079,0
+              -56.0962318,-34.8938119,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>65</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1080911,-34.8742241,0
+              -56.106691,-34.8759757,0
+              -56.1040356,-34.8744925,0
+              -56.1052533,-34.8730226,0
+              -56.1062243,-34.8735375,0
+              -56.1064764,-34.8736167,0
+              -56.1066105,-34.8735815,0
+              -56.1078765,-34.8742593,0
+              -56.1080911,-34.8742241,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>49</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1015783,-34.8796435,0
+              -56.1004035,-34.8790009,0
+              -56.1039977,-34.8745824,0
+              -56.1051081,-34.8752251,0
+              -56.1015783,-34.8796435,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>34</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1029433,-34.8805105,0
+              -56.1003952,-34.8836393,0
+              -56.0975682,-34.88246,0
+              -56.1003577,-34.8790538,0
+              -56.1029433,-34.8805105,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>48</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1069006,-34.8787483,0
+              -56.1044867,-34.8816352,0
+              -56.1028988,-34.8807815,0
+              -56.1053235,-34.8778682,0
+              -56.1069006,-34.8787483,0
+            </coordinates>
+          </LinearRing>
+        </outerBoundaryIs>
+      </Polygon>
+    </Placemark>
+    <Placemark>
+      <name>61</name>
+      <styleUrl>#poly-0288D1-1200-76-nodesc</styleUrl>
+      <Polygon>
+        <outerBoundaryIs>
+          <LinearRing>
+            <tessellate>1</tessellate>
+            <coordinates>
+              -56.1088426,-34.8781146,0
+              -56.1111171,-34.8789684,0
+              -56.1113853,-34.8807947,0
+              -56.1109883,-34.8808431,0
+              -56.1080701,-34.87925,0
+              -56.1088426,-34.8781146,0
             </coordinates>
           </LinearRing>
         </outerBoundaryIs>
