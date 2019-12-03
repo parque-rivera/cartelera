@@ -229,10 +229,8 @@ function addInfoWindow(map, element, infoWindow, position, title, description) {
 
 function addTerritoryInfoWindow(infoWindow, placemark, territories, map) {
 	var territory = territories[placemark.name];
-	var group = territory.description.split(" ");
 	var title = "Territorio " + placemark.name;
 	var description = "";
-	description = addContent(description, group[0], group[1]);
 	description = addContent(description, "Fecha", territory.dateStr);
 	description = addContent(description, "Completado", territory.isComplete ? "Sí" : "No");
 	description = addContent(description, "Manzanas", territory.blocks);
