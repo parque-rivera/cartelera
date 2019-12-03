@@ -224,15 +224,13 @@ function addInfoWindow(map, element, infoWindow, position, title, description) {
 			content: content
 		});
 		infoWindow.open(map, element);
-	});	
+	});
 }
 
 function addTerritoryInfoWindow(infoWindow, placemark, territories, map) {
 	var territory = territories[placemark.name];
-	var group = territory.description.split(" ");
 	var title = "Territorio " + placemark.name;
 	var description = "";
-	description = addContent(description, group[0], group[1]);
 	description = addContent(description, "Fecha", territory.dateStr);
 	description = addContent(description, "Completado", territory.isComplete ? "Sí" : "No");
 	description = addContent(description, "Manzanas", territory.blocks);
@@ -328,18 +326,18 @@ function createPlaceContent(placemark) {
 
 function createMarker(map, options, placemark, doc, infoWindow, contentProcessor) {
 	placemark.style.icon.scaledSize = new google.maps.Size(24, 24);
-	
+
 	var marker = new google.maps.Marker({
 	    map: map,
 	    title: placemark.name,
 	    position: placemark.Point.coordinates[0],
 		icon: placemark.style.icon
 	});
-	
+
 	if (contentProcessor != null) {
 		addInfoWindow(map, marker, infoWindow, placemark.Point.coordinates[0], placemark.name, contentProcessor(placemark));
 	}
-	
+
 	options.extrasMarkers.push(marker);
     return marker;
 }
@@ -396,11 +394,11 @@ function parseDate(dateString) {
 
 function makeSheetCall(sheetId) {
 	var url = "https://spreadsheets.google.com/feeds/list/1_RSPPwcclJjDCUb8v1_4yb8_Q5Mt5PH6E0rvG34iKsw/" + sheetId + "/public/values?alt=json";
-	return $.ajax({ 
+	return $.ajax({
 	  dataType: "json",
 	  url: url,
 	  async: true,
-	  success: function(result) {}                     
+	  success: function(result) {}
 	});
 }
 
@@ -431,20 +429,20 @@ function fetchSheetData(map, options, infoWindow) {
 		$.each(historicResponse[0].feed.entry, function(i, val) {
 			options.territories[val.gsx$territorio.$t].average = val.gsx$avg.$t != "" ? parseInt(val.gsx$avg.$t): "";
 		});
-		
+
 		fetchExtraKmz(
 			'lugares/doc.kml', map, infoWindow, options, MAP_EXTRAS.PLACES, createPlaceContent, null, createMarker
 		);
 		fetchExtraKmz(
 			'manzanas/doc.kml', map, infoWindow, options, MAP_EXTRAS.BLOCKS, null, processBlocks, null
 		);
-		
+
 		$.each(MAP_TYPE, function(index, mapType){
 			fetchTerritoriesKmz(map, infoWindow, options, mapType);
 		});
-		
+
 	});
-	
+
 }
 
 function showLegend(mapType) {
@@ -501,7 +499,7 @@ function addShowAllToggle(map, options) {
 }
 
 function addMapTypeOptions(options) {
-	var comboOptions = $(".combo-options");	
+	var comboOptions = $(".combo-options");
 	$.each(mapTypes, function(index, mapType) {
 		var option = $("<div>")
 			.addClass("combo-item")
@@ -531,7 +529,7 @@ function addShowLocation(map, options) {
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				};
-	
+
 				if (options.locationMarker !== undefined) {
 					options.locationMarker.setMap(null);
 				}
@@ -541,7 +539,7 @@ function addShowLocation(map, options) {
 					position: pos,
 					animation: google.maps.Animation.DROP
 				});
-					
+
 				map.setCenter(pos);
 				map.setZoom(17);
 			}, function(error) {
@@ -569,7 +567,7 @@ function addShowLocation(map, options) {
 }
 
 function processParams() {
-	var params = {}; 
+	var params = {};
 	location.search.substring(1).replace(/([^=&]+)=([^&]*)/g, function(m, key, value) {
 	    params[decodeURIComponent(key)] = decodeURIComponent(value);
 	});
@@ -618,7 +616,7 @@ function fixOverlays() {
 }
 
 jQuery(document).ready(function () {
-	
+
 	var options = {
 		alreadyRun: false,
 		mapShown: MAP_TYPE.ORIGINAL,
@@ -629,7 +627,7 @@ jQuery(document).ready(function () {
 		territories: [],
 		groups: [],
 		minDate: new Date(),
-		maxDate: new Date(2010, 1, 1), 
+		maxDate: new Date(2010, 1, 1),
 		minAverage: 999,
 		maxAverage: -1,
 		extrasShown: true,
@@ -647,19 +645,19 @@ jQuery(document).ready(function () {
 			mapTypeIds: ['roadmap', 'hybrid']
 		}
     });
-	
+
 	map.controls[google.maps.ControlPosition.LEFT_TOP].push($("#legend-box")[0]);
 	$.each($(".map-control"), function(index, control) {
 	    map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
 		$(control).css("z-index", 1);
-	});	
+	});
 	map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push($("#show-location")[0]);
-	
+
 	var infoWindow = new google.maps.InfoWindow();
 	loadMapType(options);
 	fetchSheetData(map, options, infoWindow);
 	showLegend(options.mapShown);
-	
+
 	google.maps.event.addListener(map, "click", function (e) {
 		infoWindow.close();
 		$(".combo-options").hide();
@@ -670,16 +668,16 @@ jQuery(document).ready(function () {
 	addShowLegendToggle(map, options);
 	addShowAllToggle(map, options);
 	addShowLocation(map, options);
-	
+
 	fixOverlays();
 	turnOnGrayscale();
-	google.maps.event.addListener(map, 'maptypeid_changed', function() { 
+	google.maps.event.addListener(map, 'maptypeid_changed', function() {
 		turnOnGrayscale();
 	});
-	google.maps.event.addListener(map, 'zoom_changed', function() { 
+	google.maps.event.addListener(map, 'zoom_changed', function() {
 		turnOnGrayscale();
 	});
-	
+
 	$("#original-legend .legend-row").click(function() {
 		var group = $(this).find(".legend-title").text().split(" ")[1];
 		var bounds = options.groups[group];
