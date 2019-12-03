@@ -277,7 +277,7 @@ function findTerritory(geoXmlDoc, territory) {
 function focusTerritory(geoXmlDoc, map, options) {
 	var territory = options.params.territorio;
 	if (territory !== undefined) {
-		var placemark = findTerritory(geoXmlDoc.placemarks);
+		var placemark = findTerritory(geoXmlDoc);
 		var bounds = new google.maps.LatLngBounds();
 		var coordinates = placemark.Polygon[0].outerBoundaryIs[0].coordinates;
 		$.each(coordinates, function(index, coordinate) {
