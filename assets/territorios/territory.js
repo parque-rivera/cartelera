@@ -265,19 +265,10 @@ function processPolygon(index, placemark, map, infoWindow, options, mapType) {
 	}
 }
 
-function findTerritory(geoXmlDoc, territory) {
-  for (var i = 0, len = geoXmlDoc.placemarks.length; i < len; i++) {
-  		if (geoXmlDoc.placemarks[i].name == territory) {
-	      return geoXmlDoc.placemarks[i];
-    	}
-    }
-    return null;
-}
-
 function focusTerritory(geoXmlDoc, map, options) {
 	var territory = options.params.territorio;
 	if (territory !== undefined) {
-		var placemark = findTerritory(geoXmlDoc, territory);
+		var placemark = geoXmlDoc.placemarks[territory - 1];
 		var bounds = new google.maps.LatLngBounds();
 		var coordinates = placemark.Polygon[0].outerBoundaryIs[0].coordinates;
 		$.each(coordinates, function(index, coordinate) {
