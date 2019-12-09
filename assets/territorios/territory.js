@@ -133,8 +133,6 @@ mapTypes[MAP_TYPE.CAMPAIGN] = {
 		showMap(options, MAP_TYPE.CAMPAIGN);
 	}
 };
-
-
 var mapStyles = [
   {
     "featureType": "administrative",
@@ -163,12 +161,10 @@ var mapStyles = [
     }]
   }
 ];
-
 function rgb(red, green, blue) {
     var decColor = 0x1000000 + Math.round(blue) + 0x100 * Math.round(green) + 0x10000 * Math.round(red);
     return '#' + decColor.toString(16).substr(1);
 }
-
 function addTerritoryLabel(placemark, map) {
 	new MapLabel({
 		text: placemark.name,
@@ -180,7 +176,6 @@ function addTerritoryLabel(placemark, map) {
 		minZoom: 15
 	});
 }
-
 function addTerritoryLabels(geoXmlDoc, map, options) {
 	$.each(geoXmlDoc.placemarks, function (index, placemark) {
 		if (placemark.polygon) {
@@ -205,7 +200,6 @@ function addTerritoryLabels(geoXmlDoc, map, options) {
 		}
 	});
 }
-
 function addContent(content, title, description) {
 	if (description != "") {
 		if (content != "") {
@@ -215,7 +209,6 @@ function addContent(content, title, description) {
 	}
 	return content;
 }
-
 function addInfoWindow(map, element, infoWindow, position, title, description) {
 	google.maps.event.addListener(element, "click", function (e) {
 		var content = "<h3>" + title + "</h3>" + description;
@@ -226,7 +219,6 @@ function addInfoWindow(map, element, infoWindow, position, title, description) {
 		infoWindow.open(map, element);
 	});
 }
-
 function addTerritoryInfoWindow(infoWindow, placemark, territories, map) {
 	var territory = territories[placemark.name];
 	var title = "Territorio " + placemark.name;
@@ -237,7 +229,6 @@ function addTerritoryInfoWindow(infoWindow, placemark, territories, map) {
 	description = addContent(description, "Notas", territory.notes);
 	addInfoWindow(map, placemark.polygon, infoWindow, placemark.polygon.bounds.getCenter(), title, description);
 }
-
 function calculateGroupCoordinates(options, territory, placemark) {
 	var bounds = options.groups[territory.group];
 	if (bounds === undefined) {
@@ -249,7 +240,6 @@ function calculateGroupCoordinates(options, territory, placemark) {
 	});
 	options.groups[territory.group] = bounds;
 }
-
 function processPolygon(index, placemark, map, infoWindow, options, mapType) {
 	if (placemark.polygon) {
 		var territory = options.territories[placemark.name];
@@ -264,11 +254,19 @@ function processPolygon(index, placemark, map, infoWindow, options, mapType) {
 		addTerritoryInfoWindow(infoWindow, placemark, options.territories, map);
 	}
 }
-
+function findTerritory(geoXmlDoc, territory) {
+  for (var i = 0, len = geoXmlDoc.placemarks.length; i < len; i++) {
+  		if (geoXmlDoc.placemarks[i].name == territory) {
+	      return geoXmlDoc.placemarks[i];
+    	}
+    }
+    return null;
+}
 function focusTerritory(geoXmlDoc, map, options) {
 	var territory = options.params.territorio;
 	if (territory !== undefined) {
-		var placemark = geoXmlDoc.placemarks[territory - 1];
+		var placemark = findTerritory(geoXmlDoc);
+		var placemark = findTerritory(geoXmlDoc, territory);
 		var bounds = new google.maps.LatLngBounds();
 		var coordinates = placemark.Polygon[0].outerBoundaryIs[0].coordinates;
 		$.each(coordinates, function(index, coordinate) {
@@ -280,7 +278,6 @@ function focusTerritory(geoXmlDoc, map, options) {
 		});
 	}
 }
-
 function processTerritories(doc, map, infoWindow, options, mapType) {
     var geoXmlDoc = doc[0];
 	if (!options.alreadyRun) {
@@ -289,7 +286,6 @@ function processTerritories(doc, map, infoWindow, options, mapType) {
 		console.log("maxAverage = " + options.maxAverage + "; minAverage = " + options.minAverage);
 	}
 	options.docs[mapType] = geoXmlDoc;
-
 	$.each(geoXmlDoc.placemarks, function(index, placemark) {
 		processPolygon(index, placemark, map, infoWindow, options, mapType);
 	});
@@ -300,7 +296,6 @@ function processTerritories(doc, map, infoWindow, options, mapType) {
 	}
 	options.alreadyRun = true;
 }
-
 function fetchTerritoriesKmz(map, infoWindow, options, mapType) {
 	var geoXmlLayer = new geoXML3.parser({
         map: map,
@@ -313,7 +308,6 @@ function fetchTerritoriesKmz(map, infoWindow, options, mapType) {
     geoXmlLayer.parse('territories.kml');
 	options.layers[mapType] = geoXmlLayer;
 }
-
 function createPlaceContent(placemark) {
 	var descriptionStr = "";
 	var descriptionItems = placemark.description.split("<br>");
@@ -323,25 +317,20 @@ function createPlaceContent(placemark) {
 	});
 	return descriptionStr;
 }
-
 function createMarker(map, options, placemark, doc, infoWindow, contentProcessor) {
 	placemark.style.icon.scaledSize = new google.maps.Size(24, 24);
-
 	var marker = new google.maps.Marker({
 	    map: map,
 	    title: placemark.name,
 	    position: placemark.Point.coordinates[0],
 		icon: placemark.style.icon
 	});
-
 	if (contentProcessor != null) {
 		addInfoWindow(map, marker, infoWindow, placemark.Point.coordinates[0], placemark.name, contentProcessor(placemark));
 	}
-
 	options.extrasMarkers.push(marker);
     return marker;
 }
-
 function addBlockLabel(map, options, placemark) {
 	var coordinates = placemark.Point.coordinates[0];
 	var label = new MapLabel({
@@ -355,13 +344,11 @@ function addBlockLabel(map, options, placemark) {
 	});
 	options.extrasBlocks.push(label);
 }
-
 function processBlocks(map, options, doc) {
 	$.each(doc[0].placemarks, function(index, placemark) {
 		addBlockLabel(map, options, placemark);
 	})
 }
-
 function fetchExtraKmz(url, map, infoWindow, options, extraType, contentProcessor, afterParse, createMarker) {
 	var geoXmlLayer = new geoXML3.parser({
         map: map,
@@ -382,7 +369,6 @@ function fetchExtraKmz(url, map, infoWindow, options, extraType, contentProcesso
     geoXmlLayer.parse(url);
 	options.extraLayers[extraType] = geoXmlLayer;
 }
-
 function parseDate(dateString) {
 	if (dateString != "") {
 		var dateArray = dateString.split("/");
@@ -391,7 +377,6 @@ function parseDate(dateString) {
 	}
 	return dateString;
 }
-
 function makeSheetCall(sheetId) {
 	var url = "https://spreadsheets.google.com/feeds/list/1_RSPPwcclJjDCUb8v1_4yb8_Q5Mt5PH6E0rvG34iKsw/" + sheetId + "/public/values?alt=json";
 	return $.ajax({
@@ -401,7 +386,6 @@ function makeSheetCall(sheetId) {
 	  success: function(result) {}
 	});
 }
-
 function fetchSheetData(map, options, infoWindow) {
 	var sheets = {
 		territoriesId: "o2kur1k",
@@ -411,7 +395,6 @@ function fetchSheetData(map, options, infoWindow) {
 	$.each(sheets, function(index, sheet) {
 		calls.push(makeSheetCall(sheet));
 	})
-
 	$.when(calls[0], calls[1], calls[2], calls[3]).done(function(territoriesResponse, historicResponse, phoneResponse, letterResponse) {
 		$.each(territoriesResponse[0].feed.entry, function(i, val) {
 			options.territories[val.gsx$territorio.$t] = {
@@ -429,35 +412,28 @@ function fetchSheetData(map, options, infoWindow) {
 		$.each(historicResponse[0].feed.entry, function(i, val) {
 			options.territories[val.gsx$territorio.$t].average = val.gsx$avg.$t != "" ? parseInt(val.gsx$avg.$t): "";
 		});
-
 		fetchExtraKmz(
 			'lugares/doc.kml', map, infoWindow, options, MAP_EXTRAS.PLACES, createPlaceContent, null, createMarker
 		);
 		fetchExtraKmz(
 			'manzanas/doc.kml', map, infoWindow, options, MAP_EXTRAS.BLOCKS, null, processBlocks, null
 		);
-
 		$.each(MAP_TYPE, function(index, mapType){
 			fetchTerritoriesKmz(map, infoWindow, options, mapType);
 		});
-
 	});
-
 }
-
 function showLegend(mapType) {
 	$(".legend-type").hide();
 	var legend = $(mapTypes[mapType].legendId);
 	legend.show();
 }
-
 function showMap(options, mapType) {
 	options.layers[options.mapShown].hideDocument(options.docs[options.mapShown]);
 	options.layers[options.mapShown].showDocument(options.docs[mapType]);
 	options.mapShown = mapType;
 	showLegend(mapType);
 }
-
 function addShowExtrasToggle(map, options, infoWindow) {
 	$("#show-extras-btn").click(function() {
 		options.extrasShown = !options.extrasShown;
@@ -472,7 +448,6 @@ function addShowExtrasToggle(map, options, infoWindow) {
 		$(this).toggleClass("selected");
 	});
 }
-
 function addShowLegendToggle(map, options) {
 	$("#show-legend-btn").click(function() {
 		if (options.legendShown) {
@@ -484,7 +459,6 @@ function addShowLegendToggle(map, options) {
 		$(this).toggleClass("selected");
 	});
 }
-
 function addShowAllToggle(map, options) {
 	$("#show-all-btn").click(function() {
 		options.allShown = !options.allShown;
@@ -497,7 +471,6 @@ function addShowAllToggle(map, options) {
 		$(this).toggleClass("selected");
 	});
 }
-
 function addMapTypeOptions(options) {
 	var comboOptions = $(".combo-options");
 	$.each(mapTypes, function(index, mapType) {
@@ -520,7 +493,6 @@ function addMapTypeOptions(options) {
 		comboOptions.toggle();
 	});
 }
-
 function addShowLocation(map, options) {
 	$("#show-location-btn").click(function(){
 		if (navigator.geolocation) {
@@ -529,7 +501,6 @@ function addShowLocation(map, options) {
 					lat: position.coords.latitude,
 					lng: position.coords.longitude
 				};
-
 				if (options.locationMarker !== undefined) {
 					options.locationMarker.setMap(null);
 				}
@@ -539,7 +510,6 @@ function addShowLocation(map, options) {
 					position: pos,
 					animation: google.maps.Animation.DROP
 				});
-
 				map.setCenter(pos);
 				map.setZoom(17);
 			}, function(error) {
@@ -565,7 +535,6 @@ function addShowLocation(map, options) {
 		}
 	});
 }
-
 function processParams() {
 	var params = {};
 	location.search.substring(1).replace(/([^=&]+)=([^&]*)/g, function(m, key, value) {
@@ -573,7 +542,6 @@ function processParams() {
 	});
 	return params;
 }
-
 function findMapType(paramMapType) {
 	var result = -1;
 	$.each(mapTypes, function(index, mapType) {
@@ -584,7 +552,6 @@ function findMapType(paramMapType) {
 	});
 	return result;
 }
-
 function loadMapType(options) {
 	options.params = processParams();
 	var paramMapType = options.params.mapa;
@@ -600,23 +567,19 @@ function loadMapType(options) {
 		}
 	}
 }
-
 function turnOnGrayscale() {
 	setTimeout(function() {
 		$('.gm-style > div:first-child > div:first-child > div[style*="z-index: 0"')
 			.css("-webkit-filter", "grayscale(100%)");
 	}, 300);
 }
-
 function fixOverlays() {
 	setTimeout(function() {
 		$(".gm-style > div:first-child > div:first-child > div:first-child")
 			.css("z-index", 104);
 	}, 300);
 }
-
 jQuery(document).ready(function () {
-
 	var options = {
 		alreadyRun: false,
 		mapShown: MAP_TYPE.ORIGINAL,
@@ -637,7 +600,6 @@ jQuery(document).ready(function () {
 		extrasBlocks: [],
 		params: {}
 	};
-
     var map = new google.maps.Map($("#map-canvas")[0], {
 		styles: mapStyles,
 		mapTypeControlOptions: {
@@ -645,30 +607,25 @@ jQuery(document).ready(function () {
 			mapTypeIds: ['roadmap', 'hybrid']
 		}
     });
-
 	map.controls[google.maps.ControlPosition.LEFT_TOP].push($("#legend-box")[0]);
 	$.each($(".map-control"), function(index, control) {
 	    map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
 		$(control).css("z-index", 1);
 	});
 	map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push($("#show-location")[0]);
-
 	var infoWindow = new google.maps.InfoWindow();
 	loadMapType(options);
 	fetchSheetData(map, options, infoWindow);
 	showLegend(options.mapShown);
-
 	google.maps.event.addListener(map, "click", function (e) {
 		infoWindow.close();
 		$(".combo-options").hide();
 	});
-
 	addMapTypeOptions(options);
 	addShowExtrasToggle(map, options, infoWindow);
 	addShowLegendToggle(map, options);
 	addShowAllToggle(map, options);
 	addShowLocation(map, options);
-
 	fixOverlays();
 	turnOnGrayscale();
 	google.maps.event.addListener(map, 'maptypeid_changed', function() {
@@ -677,7 +634,6 @@ jQuery(document).ready(function () {
 	google.maps.event.addListener(map, 'zoom_changed', function() {
 		turnOnGrayscale();
 	});
-
 	$("#original-legend .legend-row").click(function() {
 		var group = $(this).find(".legend-title").text().split(" ")[1];
 		var bounds = options.groups[group];
