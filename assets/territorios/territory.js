@@ -580,65 +580,63 @@ function fixOverlays() {
 	}, 300);
 }
 jQuery(document).ready(function () {
-  if ($("#map-canvas") != null) {
-    var options = {
-      alreadyRun: false,
-      mapShown: MAP_TYPE.ORIGINAL,
-      layers : {},
-      docs: {},
-      extraLayers: {},
-      extraDocs: {},
-      territories: [],
-      groups: [],
-      minDate: new Date(),
-      maxDate: new Date(2010, 1, 1),
-      minAverage: 999,
-      maxAverage: -1,
-      extrasShown: true,
-      legendShown: false,
-      allShown: true,
-      extrasMarkers: [],
-      extrasBlocks: [],
-      params: {}
-    };
-      var map = new google.maps.Map($("#map-canvas")[0], {
-      styles: mapStyles,
-      mapTypeControlOptions: {
-        style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-        mapTypeIds: ['roadmap', 'hybrid']
-      }
-      });
-    map.controls[google.maps.ControlPosition.LEFT_TOP].push($("#legend-box")[0]);
-    $.each($(".map-control"), function(index, control) {
-        map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
-      $(control).css("z-index", 1);
+	var options = {
+		alreadyRun: false,
+		mapShown: MAP_TYPE.ORIGINAL,
+		layers : {},
+		docs: {},
+		extraLayers: {},
+		extraDocs: {},
+		territories: [],
+		groups: [],
+		minDate: new Date(),
+		maxDate: new Date(2010, 1, 1),
+		minAverage: 999,
+		maxAverage: -1,
+		extrasShown: true,
+		legendShown: false,
+		allShown: true,
+		extrasMarkers: [],
+		extrasBlocks: [],
+		params: {}
+	};
+    var map = new google.maps.Map($("#map-canvas")[0], {
+		styles: mapStyles,
+		mapTypeControlOptions: {
+			style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+			mapTypeIds: ['roadmap', 'hybrid']
+		}
     });
-    map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push($("#show-location")[0]);
-    var infoWindow = new google.maps.InfoWindow();
-    loadMapType(options);
-    fetchSheetData(map, options, infoWindow);
-    showLegend(options.mapShown);
-    google.maps.event.addListener(map, "click", function (e) {
-      infoWindow.close();
-      $(".combo-options").hide();
-    });
-    addMapTypeOptions(options);
-    addShowExtrasToggle(map, options, infoWindow);
-    addShowLegendToggle(map, options);
-    addShowAllToggle(map, options);
-    addShowLocation(map, options);
-    fixOverlays();
-    turnOnGrayscale();
-    google.maps.event.addListener(map, 'maptypeid_changed', function() {
-      turnOnGrayscale();
-    });
-    google.maps.event.addListener(map, 'zoom_changed', function() {
-      turnOnGrayscale();
-    });
-    $("#original-legend .legend-row").click(function() {
-      var group = $(this).find(".legend-title").text().split(" ")[1];
-      var bounds = options.groups[group];
-      map.fitBounds(bounds);
-    });
-	}
+	map.controls[google.maps.ControlPosition.LEFT_TOP].push($("#legend-box")[0]);
+	$.each($(".map-control"), function(index, control) {
+	    map.controls[google.maps.ControlPosition.TOP_LEFT].push(control);
+		$(control).css("z-index", 1);
+	});
+	map.controls[google.maps.ControlPosition.RIGHT_BOTTOM].push($("#show-location")[0]);
+	var infoWindow = new google.maps.InfoWindow();
+	loadMapType(options);
+	fetchSheetData(map, options, infoWindow);
+	showLegend(options.mapShown);
+	google.maps.event.addListener(map, "click", function (e) {
+		infoWindow.close();
+		$(".combo-options").hide();
+	});
+	addMapTypeOptions(options);
+	addShowExtrasToggle(map, options, infoWindow);
+	addShowLegendToggle(map, options);
+	addShowAllToggle(map, options);
+	addShowLocation(map, options);
+	fixOverlays();
+	turnOnGrayscale();
+	google.maps.event.addListener(map, 'maptypeid_changed', function() {
+		turnOnGrayscale();
+	});
+	google.maps.event.addListener(map, 'zoom_changed', function() {
+		turnOnGrayscale();
+	});
+	$("#original-legend .legend-row").click(function() {
+		var group = $(this).find(".legend-title").text().split(" ")[1];
+		var bounds = options.groups[group];
+		map.fitBounds(bounds);
+	});
 });
