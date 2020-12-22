@@ -377,8 +377,7 @@
       </Pair>
     </StyleMap>
     <Placemark>
-      <name>Territorio 1a </name>
-      <description>1a</description>
+      <name>1a</name>
       <styleUrl>#poly-0288D1-1200-77</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -419,7 +418,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 2a </name>
+      <name>2a</name>
       <styleUrl>#poly-0F9D58-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -530,7 +529,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 3a</name>
+      <name>3a</name>
       <styleUrl>#poly-E65100-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -565,7 +564,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Terrritorio 7a</name>
+      <name>7a</name>
       <styleUrl>#poly-CE93D8-1201-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -597,7 +596,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 6a</name>
+      <name>6a</name>
       <styleUrl>#poly-AFB42B-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -631,7 +630,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 5a</name>
+      <name>5a</name>
       <styleUrl>#poly-1A237E-1401-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -664,7 +663,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 4a</name>
+      <name>4a</name>
       <styleUrl>#poly-C2185B-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -711,7 +710,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 1b</name>
+      <name>1b</name>
       <styleUrl>#poly-0288D1-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -745,7 +744,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 2b</name>
+      <name>2b</name>
       <styleUrl>#poly-0F9D58-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -769,7 +768,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 3b</name>
+      <name>3b</name>
       <styleUrl>#poly-E65100-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -813,7 +812,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 7b</name>
+      <name>7b</name>
       <styleUrl>#poly-CE93D8-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -847,7 +846,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 6b</name>
+      <name>6b</name>
       <styleUrl>#poly-AFB42B-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -884,7 +883,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 4b</name>
+      <name>4b</name>
       <styleUrl>#poly-C2185B-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
@@ -916,7 +915,7 @@
       </Polygon>
     </Placemark>
     <Placemark>
-      <name>Territorio 5b</name>
+      <name>5b</name>
       <styleUrl>#poly-1A237E-1200-77-nodesc</styleUrl>
       <Polygon>
         <outerBoundaryIs>
