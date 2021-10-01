@@ -13,7 +13,7 @@ function fill(item, selector, content, link) {
 	} else {
 		field.find(".value").text(content);
 	}
-	if (content.length == 0) {
+	if (content === undefined || content.length == 0) {
 		field.hide();
 	}
 }
@@ -38,7 +38,7 @@ function addDoNotCalls(territoriesData, territory, link, doNotCallField) {
 						$("<li>")
 							.text("Territorio " + territory)
 							.append(ul)
-					)		
+					)
 			);
 		$.each(addressList, function(key, value) {
 			var url = "https://www.google.com/maps/search/?api=1&query=" + value;
@@ -177,8 +177,8 @@ function processData(groupsRequest, placesRequest, territoriesRequest) {
 			var time = times[i];
 			fill(row, ".time", time.hour);
 			fill(row, ".place", time.place, findPlace(placesData, time.place));
-			fill(row, ".cond", time.conductor, phoneLink + time.conductorPhone);
-			fill(row, ".aux", time.auxiliar, phoneLink + time.auxiliarPhone);
+			fill(row, ".cond", time.conductor, time.conductorPhone.length > 0 ? phoneLink + time.conductorPhone : null);
+			fill(row, ".aux", time.auxiliar, time.auxiliarPhone.length > 0 ? phoneLink + time.auxiliarPhone : null);
 			fill(row, ".notes", time.notes);
 			fillAssignments(row, time.assignments, territoriesData);
 			item.find(".rows").append(row);
@@ -190,9 +190,9 @@ function processData(groupsRequest, placesRequest, territoriesRequest) {
 }
 
 function groups() {
-	var groups = 'https://sheets.googleapis.com/v4/spreadsheets/1uTjpzxOZ5GNIKorAhHVzerRB4zbDhBvYIVtXF9T17-s/values/json?key=AIzaSyDeLzgtsrTNxNrXFe7H-RxBwg8CY30X4Lk';
-	var places = 'https://sheets.googleapis.com/v4/spreadsheets/1uTjpzxOZ5GNIKorAhHVzerRB4zbDhBvYIVtXF9T17-s/values/lugares_json?key=AIzaSyDeLzgtsrTNxNrXFe7H-RxBwg8CY30X4Lk';
-	var territories = 'https://sheets.googleapis.com/v4/spreadsheets/1uTjpzxOZ5GNIKorAhHVzerRB4zbDhBvYIVtXF9T17-s/values/territorios?key=AIzaSyDeLzgtsrTNxNrXFe7H-RxBwg8CY30X4Lk';
+	var groups = 'https://sheets.googleapis.com/v4/spreadsheets/18YKzIfwnYN-8ui_HTb4GrkA3SUxOaCwNQ0QFXUOL1PE/values/json?key=AIzaSyDeLzgtsrTNxNrXFe7H-RxBwg8CY30X4Lk';
+	var places = 'https://sheets.googleapis.com/v4/spreadsheets/18YKzIfwnYN-8ui_HTb4GrkA3SUxOaCwNQ0QFXUOL1PE/values/lugares_json?key=AIzaSyDeLzgtsrTNxNrXFe7H-RxBwg8CY30X4Lk';
+	var territories = 'https://sheets.googleapis.com/v4/spreadsheets/18YKzIfwnYN-8ui_HTb4GrkA3SUxOaCwNQ0QFXUOL1PE/values/territorios?key=AIzaSyDeLzgtsrTNxNrXFe7H-RxBwg8CY30X4Lk';
 
 	var groupsRequest = new XMLHttpRequest();
 	groupsRequest.open('GET', groups);
@@ -208,10 +208,10 @@ function groups() {
 				processData(groupsRequest, placesRequest, territoriesRequest);
 			}
 			territoriesRequest.send();
-				
+
 		}
 		placesRequest.send();
-		
+
 	}
 	groupsRequest.send();
 }
